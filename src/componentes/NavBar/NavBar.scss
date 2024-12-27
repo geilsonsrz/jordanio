@@ -1,0 +1,80 @@
+
+.navBar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3rem;
+    width: 100%;
+    padding: 0 .5rem;
+    // border-bottom: solid .1em black;
+    background-color: rgba(#000000,  0.1);
+    box-shadow: black 0em 0em 1em;
+    backdrop-filter: blur(.15em);
+    -webkit-backdrop-filter: blur(.1em);
+    z-index: 1000;
+}
+
+.botaoTema {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+.botaoMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 2.5rem;
+    height: 1.5em;
+    transition: all ease-in-out .5s;
+    
+    .linha
+    {
+        width: 2.5em;
+        height: .2em;
+        border-radius: 2em;
+        transition: all ease-in-out .5s;
+    }
+}
+
+
+
+.menuAtivo {
+    margin-top: 0.3em;
+
+    .linha01
+    {
+        width: 100%;
+        transform: 
+        rotateZ(-45deg) 
+        translateZ(2em) 
+        translateX(-0.3em) 
+        translateY(0.3em);
+    }
+
+    .linha02 {
+        transform: rotateZ(-450deg);
+        opacity: 0;
+    }
+    
+    .linha03
+    {
+        width: 100%;
+        transform: 
+        rotate(405deg)
+        translateZ(-2em)
+        translateX(-0.6em)
+        translateY(-0.6em);
+    }
+}
+
+
+
+
+
+

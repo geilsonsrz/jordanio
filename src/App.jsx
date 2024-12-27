@@ -1,14 +1,18 @@
-import { useState } from 'react';
-import style from './App.module.scss';
-import Menu from './componentes/Menu';
+import NavBar from './componentes/NavBar';
+import TelaInicial from './componentes/TelaInicial';
 
 
 function App() {
 
+  // Inicia adicionando o tema primário
+  document.getElementById('root').classList.add('tema1')
+
   return (
-    <div className={style.app}>
-      <Menu />
-    </div>
+    <>
+      <NavBar />
+      <TelaInicial />
+      <TelaInicial />
+    </>
   )
 }
 

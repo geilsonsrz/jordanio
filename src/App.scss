@@ -1,0 +1,31 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.tela {
+    display: flex;
+    min-height: 100vh;
+}
+
+.tema1 {
+    color: #000;
+    background-color: #11a1ff;
+
+    transition: ease-in-out .7s;
+
+    .linha
+    { background-color: black }
+}
+
+.tema2 {
+    color: #eee;
+    background-color: #000077;
+
+    transition: ease-in-out .7s;
+
+    .linha
+    { background-color: white }
+}
