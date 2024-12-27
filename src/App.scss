@@ -1,3 +1,4 @@
+@import './cores.scss';
 
 * {
     box-sizing: border-box;
@@ -8,16 +9,53 @@
 .tela {
     display: flex;
     min-height: 100vh;
+    padding: 1rem .5rem;
 }
 
+.bordaGradiente {
+    position: relative;
+  
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 0.2rem;
+      transition: ease-in-out .7s;
+    }
+}
+
+
 .tema1 {
-    color: #000;
-    background-color: #11a1ff;
+    color: $t1-cor-maior;
+    background-color: $t1-bg-maior;
 
     transition: ease-in-out .7s;
 
+    .tela { background-color: $t1-bg-tela; }
+
     .linha
-    { background-color: black }
+    { background-color: $t1-icone-menu }
+
+    .bordaGradiente {
+        &:after {
+          background: linear-gradient(to right, transparent, $t1-cor-maior, transparent);
+          mask-image: linear-gradient(transparent, $t1-cor-maior, transparent);
+          -webkit-mask-image: linear-gradient(transparent, $t1-cor-maior, transparent);
+        }
+    }
+
+    .navBar {
+        border-bottom: solid .1em rgba($t1-icone-menu,  0.1);
+        background-color: rgba($t1-icone-menu,  0.1);
+        box-shadow: $t1-sombra 0em 0em 1em;
+    }
+
+    .conteinerMenuMenor {
+        color: $t1-icone-menu;
+        box-shadow: $t1-sombra 0em 0em 0.2em;
+    }
 }
 
 .tema2 {
@@ -28,4 +66,12 @@
 
     .linha
     { background-color: white }
+
+    .bordaGradiente {
+        &:after {
+          background: linear-gradient(to right, transparent, #fff, transparent);
+          mask-image: linear-gradient(transparent, #fff, transparent);
+          -webkit-mask-image: linear-gradient(transparent, #fff, transparent);
+        }
+    }
 }

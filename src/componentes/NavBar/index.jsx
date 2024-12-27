@@ -10,6 +10,7 @@ function mudarClasseTema(element, classe1, classe2) {
 // Função para ativar o menu
 function fMenu() {
     document.getElementById('botaoMenu').classList.toggle('menuAtivo')
+    document.querySelector('.conteinerMenuMenor').classList.toggle('menuMenorAtivo')
 }
 
 
