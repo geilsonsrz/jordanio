@@ -1,3 +1,4 @@
+import MenuMenor from './componentes/MenuMenor';
 import NavBar from './componentes/NavBar';
 import TelaInicial from './componentes/TelaInicial';
 
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <NavBar />
+      <MenuMenor />
       <TelaInicial />
       <TelaInicial />
     </>

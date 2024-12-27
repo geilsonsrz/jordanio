@@ -7,11 +7,11 @@
     height: 3rem;
     width: 100%;
     padding: 0 .5rem;
-    // border-bottom: solid .1em black;
+    border-bottom: solid .1em #ffffff11;
     background-color: rgba(#000000,  0.1);
     box-shadow: black 0em 0em 1em;
-    backdrop-filter: blur(.15em);
-    -webkit-backdrop-filter: blur(.1em);
+    backdrop-filter: blur(.2em);
+    -webkit-backdrop-filter: blur(.3em);
     z-index: 1000;
 }
 
@@ -21,6 +21,11 @@
     justify-content: center;
     width: 2rem;
     height: 2rem;
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
 }
 
 
