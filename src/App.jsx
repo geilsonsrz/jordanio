@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import viteLogo from '/vite.svg'
-import './App.scss'
+import { useState } from 'react';
+import style from './App.module.scss';
+import Menu from './componentes/Menu';
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      
-    </>
+    <div className={style.app}>
+      <Menu />
+    </div>
   )
 }
 
