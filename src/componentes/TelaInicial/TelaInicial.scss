@@ -1,4 +1,27 @@
 
 .telaInicial {
-    background-color: none;
+    transition: ease-in-out .7s;
+}
+
+
+.bgFoto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../public/jordandio.png');
+    background-size: cover;
+    background-position: center;
+
+    .btn {
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 40%;
+    }
+
+}
+
+.txtTitulo {
+    margin-top: 25%;
 }

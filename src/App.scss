@@ -11,7 +11,6 @@ html { scroll-behavior: smooth; }
 .tela {
     display: flex;
     min-height: 100vh;
-    padding: 1rem .5rem;
 }
 
 .bordaGradiente {
@@ -32,14 +31,16 @@ html { scroll-behavior: smooth; }
 .tema1 {
     color: $t1-cor-maior;
     background-color: $t1-bg-maior;
-
     transition: ease-in-out .7s;
 
+    // FUNDO DA TELA
     .tela { background-color: $t1-bg-tela; }
 
+    // ÍCONE DO MENU
     .linha
     { background-color: $t1-icone-menu }
 
+    // DIVISOR DE TELAS
     .bordaGradiente {
         &:after {
           background: linear-gradient(to right, transparent, $t1-cor-maior, transparent);
@@ -48,21 +49,32 @@ html { scroll-behavior: smooth; }
         }
     }
 
+    // BARRA DE NAVEGAÇÃO
     .navBar {
         border-bottom: solid .1em rgba($t1-icone-menu,  0.1);
         background-color: rgba($t1-icone-menu,  0.1);
         box-shadow: $t1-sombra 0em 0em 1em;
     }
 
+    // MENU MENOR
     .conteinerMenuMenor {
         color: $t1-icone-menu;
         box-shadow: $t1-sombra 0em 0em 0.2em;
     }
+
+    // TELA INICIAL
+    .telaInicial {
+        background: #9CECFB;
+        background: -webkit-linear-gradient(to bottom, #9CECFB, #65C7F7, #0052D4);
+        background: linear-gradient(to bottom, #9CECFB, #65C7F7, #0052D4);
+    }
+
 }
 
 .tema2 {
     color: #eee;
     background-color: #000077;
+    transition: ease-in-out .7s;
 
     transition: ease-in-out .7s;
 
@@ -74,6 +86,18 @@ html { scroll-behavior: smooth; }
           background: linear-gradient(to right, transparent, #fff, transparent);
           mask-image: linear-gradient(transparent, #fff, transparent);
           -webkit-mask-image: linear-gradient(transparent, #fff, transparent);
+        }
+    }
+
+
+    // TELA INICIAL
+    .telaInicial {
+        background: #000428;
+        background: -webkit-linear-gradient(to bottom, #000077, #000428);
+        background: linear-gradient(to bottom, #000077, #000428);
+
+        .bgFoto {
+            transform: rotateY(180deg);
         }
     }
 }

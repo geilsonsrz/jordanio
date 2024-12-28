@@ -1,0 +1,22 @@
+
+
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    border: solid 0.2rem #000;
+    background-color: rgba(#000, .4);
+
+    &:active {
+        transform: scale(0.95);
+    }
+
+}
+
+a {
+    text-decoration: none;
+    &:link { color: inherit; }
+    &:visited { color: inherit; }
+}
