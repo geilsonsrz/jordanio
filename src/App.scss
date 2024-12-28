@@ -6,6 +6,8 @@
     margin: 0;
 }
 
+html { scroll-behavior: smooth; }
+
 .tela {
     display: flex;
     min-height: 100vh;
