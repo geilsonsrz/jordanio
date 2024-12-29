@@ -1,37 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Montserrat+Alternates&display=swap');
+
+
 
 /*
     FONTES
 */
-// FONTE PRIMÁRIA
-.fontePrimaria {
-    font-size: 2rem;
-    font-family: "Roboto Serif", serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100,
-      "GRAD" 0;
-}
-// FONTE SECUNDÁRIA
-.fonteSecundaria {
-    font-family: "Roboto Serif", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100,
-      "GRAD" 0;
-}
+$font-profjo: "Grechen Fuemen", serif;
+$font-primaria: "Montserrat Alternates", serif;
+
+
 
 
 /*
     CORES TEMA 1 - CLARO
 */
 // Cores do tema da págia
-$t1-bg-maior: #11a1ff;  // Cor background
+$t1-bg-maior: #eaf6ff;  // Cor background - Azul gelo
 $t1-cor-maior: #000;    // Cor do texto
 
 $t1-bg-tela: transparent;
@@ -46,3 +30,13 @@ $t1-sombra: #000;
 
 
 
+
+/*
+RASCUNHOS
+
+
+
+background: #000428;
+background: -webkit-linear-gradient(to bottom, #000077, #000428);
+background: linear-gradient(to bottom, #000077, #000428);
+*/

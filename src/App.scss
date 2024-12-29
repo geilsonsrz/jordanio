@@ -11,6 +11,8 @@ html { scroll-behavior: smooth; }
 .tela {
     display: flex;
     min-height: 100vh;
+    transition: ease-in-out .7s;
+    font-family: $font-primaria;
 }
 
 .bordaGradiente {
@@ -49,13 +51,6 @@ html { scroll-behavior: smooth; }
         }
     }
 
-    // BARRA DE NAVEGAÇÃO
-    .navBar {
-        border-bottom: solid .1em rgba($t1-icone-menu,  0.1);
-        background-color: rgba($t1-icone-menu,  0.1);
-        box-shadow: $t1-sombra 0em 0em 1em;
-    }
-
     // MENU MENOR
     .conteinerMenuMenor {
         color: $t1-icone-menu;
@@ -63,17 +58,15 @@ html { scroll-behavior: smooth; }
     }
 
     // TELA INICIAL
-    .telaInicial {
-        background: #9CECFB;
-        background: -webkit-linear-gradient(to bottom, #9CECFB, #65C7F7, #0052D4);
-        background: linear-gradient(to bottom, #9CECFB, #65C7F7, #0052D4);
-    }
-
+    .conteinerTelaInicial { background-color: #ff6600; }
 }
+
+
+
 
 .tema2 {
     color: #eee;
-    background-color: #000077;
+    background-color: #000;
     transition: ease-in-out .7s;
 
     transition: ease-in-out .7s;
@@ -89,15 +82,7 @@ html { scroll-behavior: smooth; }
         }
     }
 
-
     // TELA INICIAL
-    .telaInicial {
-        background: #000428;
-        background: -webkit-linear-gradient(to bottom, #000077, #000428);
-        background: linear-gradient(to bottom, #000077, #000428);
+    .conteinerTelaInicial { background-color: #e60000; }
 
-        .bgFoto {
-            transform: rotateY(180deg);
-        }
-    }
 }
