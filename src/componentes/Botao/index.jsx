@@ -5,7 +5,7 @@ export default function Botao({className}) {
 
     return (
         <a 
-        href="https://www.instagram.com/jordan_ny23/"
+        href="https://www.instagram.com/p/DDnOi7-pQMM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         target="_blank"
         className={`botao ${className || ''}`}
         >

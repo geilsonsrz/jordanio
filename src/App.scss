@@ -30,6 +30,10 @@ html { scroll-behavior: smooth; }
 }
 
 
+/*
+    TEMA 1
+*/
+
 .tema1 {
     color: $t1-cor-maior;
     background-color: $t1-bg-maior;
@@ -51,6 +55,10 @@ html { scroll-behavior: smooth; }
         }
     }
 
+    .botao {
+        box-shadow: #000 0 0 .3rem .1rem;
+    }
+
     // MENU MENOR
     .conteinerMenuMenor {
         color: $t1-icone-menu;
@@ -58,11 +66,17 @@ html { scroll-behavior: smooth; }
     }
 
     // TELA INICIAL
-    .conteinerTelaInicial { background-color: #ff6600; }
+    .conteinerTelaInicial {
+        background-color: #ee2500;
+        background-size: contain;
+        background-image: url('../../../public/jordanio_f1.png');
+    }
 }
 
 
-
+/*
+    TEMA 2
+*/
 
 .tema2 {
     color: #eee;
@@ -82,7 +96,15 @@ html { scroll-behavior: smooth; }
         }
     }
 
+    .botao {
+        box-shadow: #fff 0 0 .3rem .1rem;
+    }
+
     // TELA INICIAL
-    .conteinerTelaInicial { background-color: #e60000; }
+    .conteinerTelaInicial {
+        background-color: #ee2500;
+        background-size: cover;
+        background-image: url('../../../public/jordanio_f2.png');
+    }
 
 }

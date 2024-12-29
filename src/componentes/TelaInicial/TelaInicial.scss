@@ -1,23 +1,75 @@
+@import '../../cores.scss';
 
 .telaInicial {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .conteinerTelaInicial {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
     width: 90%;
     height: 70vh;
+    padding: 1.5rem 1rem;
     border-radius: 1rem;
-    background-color: #e60000;
-    background-image: url('../../../public/jordandio.png');
-    background-size: 100%;
+    // background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
     transition: ease-in-out .7s;
 }
 
 
-.conteinerTelaInicial { background-color: #e60000; }
+.cardInicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40%;
+    padding: 0.5rem 0;
+    border-radius: 1rem;
+    border: solid .1rem #fff1;
+    backdrop-filter: blur(.2em);
+    -webkit-backdrop-filter: blur(.3em);
+}
+
+.tituloCard {
+    display: flex;
+    width: 90%;
+    font-family: $font-profjo;
+    font-size: 3.5rem;
+}
+
+.setaBaixar {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15%;
+
+    svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        animation: setaDescer 2s infinite;
+    }
+}
+
+
+// Animação seta descer
+@keyframes setaDescer {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(1em);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(2em);
+    }
+}
