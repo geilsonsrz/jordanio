@@ -1,0 +1,98 @@
+
+
+.conteinerCarrocel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 7rem;
+    transform-style: preserve-3d;
+    perspective: 4rem;
+
+}
+
+
+.itemCarrocel {
+    position: absolute;
+    top: calc(50% - 4rem);
+    left: calc(50% - 2rem);
+    width: 5rem;
+    height: 7rem;
+    transition: .5s;
+    transform-style: preserve-3d;
+    transform-origin: bottom;
+    user-select: none;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:nth-child(1) {
+        transform: translate3d(-5rem, 0, 0) scale(.8) rotateY(-7deg);
+        z-index: 2;
+        &::after {
+            background-color: inherit;
+        }
+    }
+
+    &:nth-child(2) {
+        transform: translate3d(-5rem, 0, 0) scale(.8) rotateY(-7deg);
+        z-index: 3;
+        &::after {
+            background-color: inherit;
+        }
+    }
+
+    &:nth-child(3) {
+        transform: translate3d(-5rem, 0, 0) scale(.8) rotateY(-7deg);
+        z-index: 4;
+        &::after {
+            content: '';
+            background-color: inherit;
+        }
+    }
+
+    &:nth-child(4) {
+        transform: translate3d(0, .5rem, 0) scale(1) rotateY(0deg);
+        z-index: 5;
+    }
+
+    &:nth-child(5) {
+        transform: translate3d(5rem, 0, 0) scale(.8) rotateY(7deg);
+        z-index: 4;            
+        &::after {
+            background-color: inherit;
+        }
+    }
+
+    &:nth-child(6) {
+        transform: translate3d(5rem, 0, 0) scale(.8) rotateY(7deg);
+        z-index: 3;
+        &::after {
+            background-color: inherit;
+        }
+    }
+
+    &:nth-child(7) {
+        transform: translate3d(5rem, 0, 0) scale(.8) rotateY(7deg);
+        z-index: 2;
+        &::after {
+            content: '';
+            background-color: inherit;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
