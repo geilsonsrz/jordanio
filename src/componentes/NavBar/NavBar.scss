@@ -10,6 +10,7 @@
     backdrop-filter: blur(.2em);
     -webkit-backdrop-filter: blur(.3em);
     z-index: 1000;
+    user-select: none;
 }
 
 .botaoTema {
