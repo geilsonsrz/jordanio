@@ -6,19 +6,19 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 7rem;
+    min-height: 15rem;
     transform-style: preserve-3d;
-    perspective: 4rem;
+    perspective: 2rem;
 
 }
 
 
 .itemCarrocel {
     position: absolute;
-    top: calc(50% - 4rem);
-    left: calc(50% - 2rem);
-    width: 5rem;
-    height: 7rem;
+    top: calc(50% - 8rem);
+    left: calc(50% - 5rem);
+    width: 10rem;
+    height: 15rem;
     transition: .5s;
     transform-style: preserve-3d;
     transform-origin: bottom;
@@ -32,7 +32,7 @@
     }
 
     &:nth-child(1) {
-        transform: translate3d(-5rem, 0, 0) scale(.8) rotateY(-7deg);
+        transform: translate3d(-8rem, -1rem, 0) scale(.7) rotateY(-5deg);
         z-index: 2;
         &::after {
             background-color: inherit;
@@ -40,7 +40,7 @@
     }
 
     &:nth-child(2) {
-        transform: translate3d(-5rem, 0, 0) scale(.8) rotateY(-7deg);
+        transform: translate3d(-8rem, -1rem, 0) scale(.7) rotateY(-5deg);
         z-index: 3;
         &::after {
             background-color: inherit;
@@ -48,7 +48,7 @@
     }
 
     &:nth-child(3) {
-        transform: translate3d(-5rem, 0, 0) scale(.8) rotateY(-7deg);
+        transform: translate3d(-8rem, -1rem, 0) scale(.7) rotateY(-5deg);
         z-index: 4;
         &::after {
             content: '';
@@ -62,7 +62,7 @@
     }
 
     &:nth-child(5) {
-        transform: translate3d(5rem, 0, 0) scale(.8) rotateY(7deg);
+        transform: translate3d(8rem, -1rem, 0) scale(.7) rotateY(5deg);
         z-index: 4;            
         &::after {
             background-color: inherit;
@@ -70,7 +70,7 @@
     }
 
     &:nth-child(6) {
-        transform: translate3d(5rem, 0, 0) scale(.8) rotateY(7deg);
+        transform: translate3d(8rem, -1rem, 0) scale(.7) rotateY(5deg);
         z-index: 3;
         &::after {
             background-color: inherit;
@@ -78,7 +78,7 @@
     }
 
     &:nth-child(7) {
-        transform: translate3d(5rem, 0, 0) scale(.8) rotateY(7deg);
+        transform: translate3d(8rem, -1rem, 0) scale(.7) rotateY(5deg);
         z-index: 2;
         &::after {
             content: '';

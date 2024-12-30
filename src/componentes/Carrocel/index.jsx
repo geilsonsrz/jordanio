@@ -13,7 +13,7 @@ export default function Carrocel() {
         // Conteúdo
         document.querySelector('.conteinerCarrocel').appendChild(itens[0])
     
-    }, 2000)
+    }, 5000)
 
 
 
