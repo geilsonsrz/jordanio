@@ -1,28 +1,30 @@
 
-
 .conteinerCarrocel {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 15rem;
+    min-height: 25rem;
     transform-style: preserve-3d;
     perspective: 2rem;
+    transition: ease-in-out .7s;
 
 }
 
 
 .itemCarrocel {
     position: absolute;
-    top: calc(50% - 8rem);
-    left: calc(50% - 5rem);
+    top: calc(50% - 13rem);
+    // left: calc(50% - 5rem);
     width: 10rem;
     height: 15rem;
     transition: .5s;
     transform-style: preserve-3d;
     transform-origin: bottom;
     user-select: none;
+    background-color: #0007;
+    -webkit-box-reflect: below .1rem linear-gradient(transparent, #0007);
 
     &::after {
         content: '';
@@ -32,24 +34,24 @@
     }
 
     &:nth-child(1) {
-        transform: translate3d(-8rem, -1rem, 0) scale(.7) rotateY(-5deg);
-        z-index: 2;
+        transform: translate3d(-8rem, -.3rem, 0) scale(.7) rotateY(-5deg);
+        z-index: -1;
         &::after {
             background-color: inherit;
         }
     }
 
     &:nth-child(2) {
-        transform: translate3d(-8rem, -1rem, 0) scale(.7) rotateY(-5deg);
-        z-index: 3;
+        transform: translate3d(-8rem, -.3rem, 0) scale(.7) rotateY(-5deg);
+        z-index: -1;
         &::after {
             background-color: inherit;
         }
     }
 
     &:nth-child(3) {
-        transform: translate3d(-8rem, -1rem, 0) scale(.7) rotateY(-5deg);
-        z-index: 4;
+        transform: translate3d(-8rem, -.3rem, 0) scale(.7) rotateY(-5deg);
+        z-index: 1;
         &::after {
             content: '';
             background-color: inherit;
@@ -58,28 +60,28 @@
 
     &:nth-child(4) {
         transform: translate3d(0, .5rem, 0) scale(1) rotateY(0deg);
-        z-index: 5;
+        z-index: 2;
     }
 
     &:nth-child(5) {
-        transform: translate3d(8rem, -1rem, 0) scale(.7) rotateY(5deg);
-        z-index: 4;            
+        transform: translate3d(8rem, -.3rem, 0) scale(.7) rotateY(5deg);
+        z-index: 1;            
         &::after {
             background-color: inherit;
         }
     }
 
     &:nth-child(6) {
-        transform: translate3d(8rem, -1rem, 0) scale(.7) rotateY(5deg);
-        z-index: 3;
+        transform: translate3d(8rem, -.3rem, 0) scale(.7) rotateY(5deg);
+        z-index: -1;
         &::after {
             background-color: inherit;
         }
     }
 
     &:nth-child(7) {
-        transform: translate3d(8rem, -1rem, 0) scale(.7) rotateY(5deg);
-        z-index: 2;
+        transform: translate3d(8rem, -.3rem, -15rem) scale(.7) rotateY(5deg);
+        z-index: -1;
         &::after {
             content: '';
             background-color: inherit;
@@ -96,3 +98,4 @@
     }
 
 }
+
