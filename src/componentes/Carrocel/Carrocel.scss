@@ -36,6 +36,7 @@
     &:nth-child(1) {
         transform: translate3d(-8rem, -.3rem, 0) scale(.7) rotateY(-5deg);
         z-index: -1;
+        opacity: 0;
         &::after {
             background-color: inherit;
         }
@@ -44,6 +45,7 @@
     &:nth-child(2) {
         transform: translate3d(-8rem, -.3rem, 0) scale(.7) rotateY(-5deg);
         z-index: -1;
+        opacity: 0;
         &::after {
             background-color: inherit;
         }
@@ -74,6 +76,7 @@
     &:nth-child(6) {
         transform: translate3d(8rem, -.3rem, 0) scale(.7) rotateY(5deg);
         z-index: -1;
+        opacity: 0;
         &::after {
             background-color: inherit;
         }
@@ -82,6 +85,7 @@
     &:nth-child(7) {
         transform: translate3d(8rem, -.3rem, -15rem) scale(.7) rotateY(5deg);
         z-index: -1;
+        opacity: 0;
         &::after {
             content: '';
             background-color: inherit;

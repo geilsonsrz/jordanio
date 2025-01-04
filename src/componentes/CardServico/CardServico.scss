@@ -1,8 +1,80 @@
 
 
-
-.telaServicos {
+.cardServico {
+    position: relative;
     display: flex;
-    justify-content: center;
-    padding-top: 3rem;
+    width: 70%;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 .5rem .05rem #000;
+
+    .pelicula {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        background-color: transparent;
+    }
+
+    .servico {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: .5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        transition: ease-in-out .5s;
+        z-index: 1;
+    }
+
+    .conteudoServico {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        transition: ease-in-out .5s;
+        transform: translateY(90%);
+        backdrop-filter: blur(.2rem);
+        -webkit-backdrop-filter: blur(.2rem);
+        background-color: #fff2;
+        color: #000;
+
+        z-index: 1;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 1;
+    }
+
+}
+
+.cardAtivo {
+
+    .servico {
+        top: 0%;
+        left: 0%;
+        font-size: 1.2rem;
+        // margin-left: 1rem;
+        transform: translate(0, 0);
+    }
+
+    .conteudoServico {
+        background-color: #fff2;
+        transform: translateY(70%)
+    }
+
 }
