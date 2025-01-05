@@ -15,16 +15,24 @@ $font-primaria: "Montserrat Alternates", serif;
     CORES TEMA 1 - CLARO
 */
 // Cores do tema da págia
-$t1-bg-maior: #eaf6ff;  // Cor background - Azul gelo
-$t1-cor-maior: #222;    // Cor do texto
+$t1-bg-primario: #eaf6ff;  // Cor background - Azul gelo
+$t1-cor-primario: #222;    // Cor do texto
+$t1-cor-forte: #000;
 
 $t1-bg-tela: transparent;
 
-$t1-icone-menu: $t1-cor-maior;
+$t1-icone-menu: $t1-cor-primario;
 
-$t1-incone-tema: $t1-cor-maior;
+$t1-incone-tema: $t1-cor-primario;
 
 $t1-sombra: #222;
+
+$t1-cor-secundaria: #ee2500;
+
+
+
+// TELA 1
+$t1-tala1-bg: $t1-cor-secundaria;
 
 
 

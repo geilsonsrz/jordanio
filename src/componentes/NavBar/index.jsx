@@ -32,7 +32,7 @@ export default function NavBar() {
     }
 
     return (
-        <span className="navBar">
+        <span id='navBar' className="navBar">
             <span className="botaoTema" onClick={mudarTema}>
 
                 {/* Condicional para mudar o tema */}

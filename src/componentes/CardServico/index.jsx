@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './CardServico.scss'
 
 
@@ -6,28 +7,30 @@ function cardAtive(e) {
     // Captura do elemento
     let pelicula = e.target
 
-    let elementoPai = pelicula.parentElement
+    let elemento_pai = pelicula.parentElement
 
     // Adicionando ou removendo a classe
-    elementoPai.classList.toggle('cardAtivo')
+    elemento_pai.classList.toggle('cardAtivo')
     
 }
 
 
 
 
-export default function CardServico({servico, conteudo, imagem}) {
+export default function CardServico({servico, texto_servico, imagem}) {
+
 
     return (
 
-        <span className='cardServico'>
-            <img src={imagem} alt='Imagem serviço.' />
-            <span className="pelicula" onClick={cardAtive}/>
+        <span className='cardServico' style={{backgroundImage: `url(${imagem})`}}>
+            <span className='pelicula' onClick={cardAtive} />
             <span className='servico'>{servico}</span>
-            <span className='conteudoServico'>
-                <span>AAAdasdas</span>
-                {conteudo}
-            </span>
+            <span className='textoServico'>
+                <p className='descricao'>Descrição</p>
+                <p className='txt'>
+                    {texto_servico}
+                </p>
+            </span>            
         </span>
 
     )

@@ -3,11 +3,11 @@ import './TelaServicos.scss'
 
 
 
-let conteudo1 = 'Conteúdo do serviço 1'
+let texto_servico_1 = 'Identifica o condicionamento atual e objetivos do cliente, atraves de medições corporal e histórico de saúde, servindo como base para um treinamento seguro e eficaz.'
 
-let conteudo2 = 'Conteúdo do serviço 2'
+let texto_servico_2 = 'Treinos personalizados para atender às metas do cliente, seja a perda de peso, ganho de massa muscular, entre outros. Com foco em eficiência e segurança, garantindo resultados consistentes e a evolução contínua na saúde e bem-estar.'
 
-let conteudo3 = `Conteúdo do serviço ${2+1}`
+let texto_servico_3 = `Orientação especializada para auxiliar o cliente a atingir seus objetivos. Inclui a criação de estratégias personalizadas de treino, ajustes na rotina de exercícios e acompanhamento de progresso, garantindo segurança e motivação.`
 
 
 
@@ -19,23 +19,27 @@ export default function TelaServicos({className}) {
 
     return (
         <span id='telaServicos' className={`tela telaServicos bordaGradiente ${className || ''}`}>
-            Serviços
+            <span className='tituloCard'>Serviços</span>
+            
             <CardServico 
                 servico={'Avaliação Física'} 
-                conteudo={conteudo1}
-                imagem={'../../../public/teste/s1.jpg'} 
+                texto_servico={texto_servico_1}
+                imagem={'../../../public/teste/s1.jpg'}
+                // tom_img={'clara'}
             />
 
             <CardServico 
                 servico={'Treinos'} 
-                conteudo={conteudo2}
+                texto_servico={texto_servico_2}
                 imagem={'../../../public/teste/s2.jpg'} 
+                tom_img={'clara'}
             />
             
             <CardServico 
                 servico={'Consultoria'} 
-                conteudo={conteudo3}
+                texto_servico={texto_servico_3}
                 imagem={'../../../public/teste/s3.jpg'}
+                // tom_img={'clara'}
             />
         </span>
     )

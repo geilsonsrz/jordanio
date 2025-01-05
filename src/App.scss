@@ -11,8 +11,10 @@ html { scroll-behavior: smooth; }
 .tela {
     display: flex;
     min-height: 100vh;
+    width: 100vw;
     transition: ease-in-out .7s;
     font-family: $font-primaria;
+    overflow: hidden;
 }
 
 .bordaGradiente {
@@ -29,14 +31,19 @@ html { scroll-behavior: smooth; }
     }
 }
 
+.txtChave {
+    font-weight: 900;
+    transition: ease-in-out 0.5s;
+}
+
 
 /*
     TEMA 1
 */
 
 .tema1 {
-    color: $t1-cor-maior;
-    background-color: $t1-bg-maior;
+    color: $t1-cor-primario;
+    background-color: $t1-bg-primario;
     transition: ease-in-out .7s;
 
     // FUNDO DA TELA
@@ -49,9 +56,9 @@ html { scroll-behavior: smooth; }
     // DIVISOR DE TELAS
     .bordaGradiente {
         &:after {
-          background: linear-gradient(to right, transparent, $t1-cor-maior, transparent);
-          mask-image: linear-gradient(transparent, $t1-cor-maior, transparent);
-          -webkit-mask-image: linear-gradient(transparent, $t1-cor-maior, transparent);
+          background: linear-gradient(to right, transparent, $t1-cor-primario, transparent);
+          mask-image: linear-gradient(transparent, $t1-cor-primario, transparent);
+          -webkit-mask-image: linear-gradient(transparent, $t1-cor-primario, transparent);
         }
     }
 
@@ -62,30 +69,56 @@ html { scroll-behavior: smooth; }
     // MENU MENOR
     .conteinerMenuMenor {
         color: $t1-icone-menu;
+        background-color: rgba($t1-bg-primario, 0.2);
         box-shadow: $t1-sombra 0em 0em 0.2em;
+
+        .linkAtivo {
+            color: $t1-cor-secundaria;
+        }
     }
 
     // TELA INICIAL
     .conteinerTelaInicial {
-        background-color: #ee2500;
+        background-color: $t1-tala1-bg;
         background-size: contain;
         background-image: url('../../../public/jordanio_f1.png');
+    }
+
+    // PALAVRAS CHAVES
+    .txtChave {
+        color: $t1-cor-forte;
     }
 
 
     // TELA SOBRE
     .conteinerSobre {
 
-        .txtChave {
-            color: #000;
-            font-weight: 900;
-        }
-
         .imgSobre {
-            border: solid .1rem #000;
+            border: solid .1rem $t1-cor-forte;
 
             &::after {
-                border-bottom: solid .3rem #000;
+                border-bottom: solid .3rem $t1-cor-forte;
+            }
+        }
+    }
+
+
+    // TELA SERVIÇOS
+    .cardServico {
+        box-shadow: $t1-cor-forte 0 .5rem 1rem;
+
+        .servico {
+            color: $t1-cor-secundaria;
+            box-shadow: $t1-cor-secundaria 0 0 .1rem 0rem;
+        }
+
+        .textoServico {
+            color: $t1-cor-secundaria;
+        }
+
+        .descricao {
+            &::before {
+                background-color: $t1-cor-secundaria;
             }
         }
 
@@ -121,6 +154,24 @@ html { scroll-behavior: smooth; }
         box-shadow: #fff 0 0 .3rem .1rem;
     }
 
+    // MENU MENOR
+    .conteinerMenuMenor {
+        color: #fff;
+        background-color: rgba(#000, 0.2);
+        box-shadow: $t1-sombra 0em 0em 0.2em;
+
+        .linkAtivo {
+            color: $t1-cor-secundaria;
+        }
+    }
+
+
+    // PALAVRAS CHAVES
+    .txtChave {
+        color: #fff;
+    }
+
+
     // TELA INICIAL
     .conteinerTelaInicial {
         background-color: #ee2500;
@@ -133,11 +184,6 @@ html { scroll-behavior: smooth; }
     // TELA SOBRE
     .conteinerSobre {
 
-        .txtChave {
-            color: #fff;
-            font-weight: 900;
-        }
-
         .imgSobre {
             border: solid .1rem #ddd;
 
@@ -145,7 +191,31 @@ html { scroll-behavior: smooth; }
                 border-bottom: solid .3rem #ddd;
             }
         }
+    }
+
+
+    // TELA SERVIÇOS
+    .cardServico {
+        box-shadow: rgba(#ee2500, .5) 0 .5rem 1rem;
+
+        .servico {
+            color: #ee2500;
+            box-shadow: #ee2500 0 0 .1rem 0rem;
+        }
+
+        .textoServico {
+            color: #ee2500;
+        }
+
+        .descricao {
+            &::before {
+                background-color: #ee2500;
+            }
+        }
 
     }
+
+
+
 
 }
