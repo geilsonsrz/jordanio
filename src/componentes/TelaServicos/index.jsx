@@ -24,22 +24,19 @@ export default function TelaServicos({className}) {
             <CardServico 
                 servico={'Avaliação Física'} 
                 texto_servico={texto_servico_1}
-                imagem={'../../../public/teste/s1.jpg'}
-                // tom_img={'clara'}
+                imagem={'./teste/s1.jpg'}
             />
 
             <CardServico 
                 servico={'Treinos'} 
                 texto_servico={texto_servico_2}
-                imagem={'../../../public/teste/s2.jpg'} 
-                tom_img={'clara'}
+                imagem={'./teste/s2.jpg'} 
             />
             
             <CardServico 
                 servico={'Consultoria'} 
                 texto_servico={texto_servico_3}
-                imagem={'../../../public/teste/s3.jpg'}
-                // tom_img={'clara'}
+                imagem={'./teste/s3.jpg'}
             />
         </span>
     )
