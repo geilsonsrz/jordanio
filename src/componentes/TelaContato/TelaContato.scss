@@ -1,0 +1,45 @@
+
+.telaContato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0rem;
+
+    .conteinerForm {
+        position: relative;
+        display: flex;
+        padding: 1rem;
+    }
+
+    .formulario {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        .conteinerItensForm {
+            display: flex;
+            flex-direction: column;
+            gap: inherit;
+        }
+
+        .inputForm {
+            padding: .5rem;
+            border-radius: 1rem;
+
+            &::placeholder {
+                font-weight: 400;
+                letter-spacing: .1rem;
+            }
+        }
+
+        .areaMensagem {
+            height: 10rem;
+            resize: none;
+
+        }
+    }
+
+
+}

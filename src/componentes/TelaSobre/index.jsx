@@ -5,7 +5,7 @@ import './TelaSobre.scss'
 export default function TelaSobre({className}) {
 
     return (
-        <span id='telaSobre' className={`tela telaSobre bordaGradiente ${className || ''}`}>
+        <section id='telaSobre' className={`tela telaSobre bordaGradiente ${className || ''}`}>
             
             <span className='conteinerSobre'>
 
@@ -31,7 +31,7 @@ export default function TelaSobre({className}) {
 
             </span>
 
-        </span>
+        </section>
     )
 }
 

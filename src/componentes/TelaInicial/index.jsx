@@ -5,17 +5,24 @@ import './TelaInicial.scss'
 export default function TelaInicial({className}) {
 
     return (
-        <span id='telaInicial' className={`tela telaInicial bordaGradiente ${className || ''}`}>
+        <section id='telaInicial' className={`tela telaInicial bordaGradiente ${className || ''}`}>
             <span className='conteinerTelaInicial'>
 
                 <span className='cardInicio'>
                     <span className='tituloCard'>Prof. Jô</span>
-                    <Botao 
-                        className={''}
-                        href={'https://www.instagram.com/p/DDnOi7-pQMM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='}
-                        target={'_blank'}
-                        texto={'Saiba mais'}
-                    />
+                    <span className='areaBotoes'>
+                        <Botao 
+                            className={'btnSaibaMais'}
+                            href={'https://www.instagram.com/p/DDnOi7-pQMM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='}
+                            target={'_blank'}
+                            texto={'Saiba mais'}
+                        />
+                        < Botao
+                            className={'btnContato'}
+                            href={'#telaContato'}
+                            texto={'Contato'}
+                        />
+                    </span>
                 </span>
 
             </span>
@@ -27,7 +34,7 @@ export default function TelaInicial({className}) {
                 </svg>
             </span>
 
-        </span>
+        </section>
     )
 }
 

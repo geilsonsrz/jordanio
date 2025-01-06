@@ -18,7 +18,7 @@ let texto_servico_3 = `Orientação especializada para auxiliar o cliente a atin
 export default function TelaServicos({className}) {
 
     return (
-        <span id='telaServicos' className={`tela telaServicos bordaGradiente ${className || ''}`}>
+        <section id='telaServicos' className={`tela telaServicos bordaGradiente ${className || ''}`}>
             <span className='tituloCard'>Serviços</span>
             
             <CardServico 
@@ -38,6 +38,6 @@ export default function TelaServicos({className}) {
                 texto_servico={texto_servico_3}
                 imagem={'./teste/s3.jpg'}
             />
-        </span>
+        </section>
     )
 }

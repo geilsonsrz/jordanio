@@ -22,7 +22,6 @@
     transition: ease-in-out .7s;
 }
 
-
 .cardInicio {
     display: flex;
     flex-direction: column;
@@ -42,6 +41,11 @@
     width: 90%;
     font-family: $font-profjo;
     font-size: 3.5rem;
+}
+
+.areaBotoes {
+    display: flex;
+    margin: 0 0.5rem;
 }
 
 .setaBaixar {

@@ -37,6 +37,10 @@ html { scroll-behavior: smooth; }
     transition: ease-in-out 0.5s;
 }
 
+.inputForm {
+    font-family: $font-primaria;
+} 
+
 
 /*
     TEMA 1
@@ -79,6 +83,20 @@ html { scroll-behavior: smooth; }
         background-color: $t1-tala1-bg;
         background-size: contain;
         background-image: url('../../../public/jordanio_f1.png');
+
+        .tituloCard {
+            color: #111;
+        }
+
+        .btnSaibaMais {
+            color: #ddd;
+            background: #111;
+        }
+        
+        .btnContato {
+            color: #ddd;
+            background: #111;
+        }
     }
 
     // PALAVRAS CHAVES
@@ -161,6 +179,25 @@ html { scroll-behavior: smooth; }
     }
 
 
+    // TELA CONTATO
+
+.telaContato {
+
+    .formulario {
+
+        .inputForm {
+            color: $t1-cor-primario;
+            background-color: #ddd;
+
+            &::placeholder {
+                color: #555;
+            }
+        }
+    }
+
+}
+
+
 }
 
 
@@ -214,6 +251,18 @@ html { scroll-behavior: smooth; }
         background-color: #ee2500;
         background-size: cover;
         background-image: url('../../../public/jordanio_f2.png');
+
+        .btnSaibaMais {
+            color: #ddd;
+            background: #fd1d1d;
+            box-shadow: none;
+        }
+        
+        .btnContato {
+            color: #ddd;
+            background: #000;
+            box-shadow: none;
+        }
     }
 
 

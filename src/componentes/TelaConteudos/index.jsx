@@ -17,8 +17,8 @@ let conteudo_2_pdf = 'aquivo.pdf'
 export default function TelaConteudos({className}) {
 
     return (
-        <span id='telaConteudos' className={`tela telaConteudos bordaGradiente ${className || ''}`}>
-            <span className='tituloCard'>Conteúdos</span>
+        <section id='telaConteudos' className={`tela telaConteudos bordaGradiente ${className || ''}`}>
+            <span className='tituloCard'>Leituras</span>
             <p className='textoTela'>
                 Explicação sobre os documentos que constam aqui.
             </p>
@@ -38,7 +38,7 @@ export default function TelaConteudos({className}) {
             />
 
 
-        </span>
+        </section>
     )
 }
 
