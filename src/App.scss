@@ -9,9 +9,10 @@
 html { scroll-behavior: smooth; }
 
 .tela {
+    position: relative;
     display: flex;
     min-height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
     transition: ease-in-out .7s;
     font-family: $font-primaria;
     overflow: hidden;
@@ -124,6 +125,40 @@ html { scroll-behavior: smooth; }
 
     }
 
+
+    // TELA CONTEÚDOS
+    .lamina {
+        .conteinerLamina {
+            background-color: $t1-bg-primario;
+        }
+
+        .btnConteudo {
+            border: solid #000 .1rem;
+        }
+
+        &::after {
+            background: #000;
+        }
+
+    }
+
+    .direita {
+        &::before {
+            background: linear-gradient(to right, #000046, #1cb5e0);
+            background-size: 400% 400%;
+            animation: moverBackground 4s linear infinite;
+        }
+    }
+
+    .esquerda {
+        &::before {
+            background: linear-gradient(to left, #03001e, #7303c0, #ec38bc);
+            background-size: 400% 400%;
+            animation: moverBackground 4s linear infinite;
+        }
+    }
+
+
 }
 
 
@@ -213,6 +248,46 @@ html { scroll-behavior: smooth; }
             }
         }
 
+    }
+
+
+    // TELA CONTEÚDOS
+    .lamina {
+        .conteinerLamina {
+            background-color: #000;
+            // filter: contrast(.7) brightness(1.5);
+        }
+
+        .btnConteudo {
+            border: solid #fff .1rem;
+        }
+
+        &::after {
+            background: #fff;
+            backdrop-filter: blur(1rem);
+            -webkit-backdrop-filter: blur(1rem);
+            filter: brightness(1.5) contrast(.7);
+        }
+
+        &::before {
+            filter: blur(.2rem);
+        }
+    }
+
+    .direita {
+        &::before {
+            background: linear-gradient(to right, #5433ff, #20bdff, #a5fecb);
+            background-size: 400% 400%;
+            animation: moverBackground 3s linear infinite;
+        }
+    }
+
+    .esquerda {
+        &::before {
+            background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+            background-size: 400% 400%;
+            animation: moverBackground 3s linear infinite;
+        }
     }
 
 

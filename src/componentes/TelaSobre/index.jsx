@@ -16,10 +16,10 @@ export default function TelaSobre({className}) {
                 </span>
 
                 {/* TEXTO SOBRE */}
-                <p>
+                <p className='textoSobre'>
                     Fala pessoal! Pra quem não me conhece meu nome é Jordanny, mais conhecido como Prof Jô. Sou graduado em educação física (licenciatura e bacharelado) e atualmente estou prestes a defender meu mestrado na linha de pesquisa em exercício e promoção de saúde.
                 </p>
-                <p>
+                <p className='textoSobre'>
                     Meu estudo foi realizado com idosos que praticam exercício físico, atualmente busco ajudar estudantes que estejam a busca de encontrar uma carreira profissional por meio da graduação e pós, além disso, <span className='txtChave'>sou atleta de Powerlifthing</span> nas horas vagas e diante disso entrei como sócio fundador da <span className='txtChave'>Associação Hoy Sports</span> para arrecadação de fundos para atletas de alta performance, com objetivo de sonho olímpico!
                 </p>
 
