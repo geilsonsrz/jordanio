@@ -63,10 +63,6 @@ html { scroll-behavior: smooth; }
         }
     }
 
-    .botao {
-        box-shadow: #000 0 0 .3rem .1rem;
-    }
-
     // MENU MENOR
     .conteinerMenuMenor {
         color: $t1-icone-menu;
@@ -132,8 +128,14 @@ html { scroll-behavior: smooth; }
             background-color: $t1-bg-primario;
         }
 
-        .btnConteudo {
-            border: solid #000 .1rem;
+        .btnLeitura {
+            color: #ddd;
+            background: #002;
+        }
+        
+        .btnBaixar {
+            color: #ddd;
+            background: #020;
         }
 
         &::after {
@@ -258,9 +260,18 @@ html { scroll-behavior: smooth; }
             // filter: contrast(.7) brightness(1.5);
         }
 
-        .btnConteudo {
-            border: solid #fff .1rem;
+        .btnLeitura {
+            color: #001;
+            background: #12fff7;
+            box-shadow: none;
         }
+        
+        .btnBaixar {
+            color: #010;
+            background: #00F260;
+            box-shadow: none;
+        }
+
 
         &::after {
             background: #fff;

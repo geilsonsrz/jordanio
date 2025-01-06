@@ -1,3 +1,4 @@
+import Botao from '../Botao'
 import './Lamina.scss'
 
 
@@ -9,8 +10,14 @@ export default function Lamina({className , tituloConteudo, textoConteudo}) {
                 <span className='tituloConteudo'>{tituloConteudo}</span>
                 <span className='textoConteudo'>{textoConteudo}</span>
                 <span className='areaBotoes'>
-                    <span className='btnConteudo' >Leitura</span>
-                    <span className='btnConteudo' >Baixar</span>
+                    <Botao 
+                        className={'btnLeitura'}
+                        texto={'Leitura'}
+                    />
+                    <Botao 
+                        className={'btnBaixar'}
+                        texto={'Baixar'}
+                    />
                 </span>
             </span>
         </span>

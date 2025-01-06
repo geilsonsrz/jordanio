@@ -1,17 +1,18 @@
 
 
 .botao {
+    user-select: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 1.5rem;
+    padding: .5rem 1rem;
+    font-weight: bold;
     border-radius: .5rem;
-    border: solid .1rem transparent;
-    background-color: rgba(#000, .3);
-    transition: ease-in-out .7s;
+    border: solid .1rem #000;
+    transition: ease-in-out 1s;
 
     &:active {
-        transform: scale(0.95);
+        transform: scale(0.98);
     }
 }
 
@@ -19,4 +20,13 @@ a {
     text-decoration: none;
     &:link { color: inherit; }
     &:visited { color: inherit; }
+}
+
+
+.btnLeitura {
+    letter-spacing: .1rem;
+}
+
+.btnBaixar {
+    letter-spacing: .1rem;
 }

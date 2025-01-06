@@ -10,7 +10,12 @@ export default function TelaInicial({className}) {
 
                 <span className='cardInicio'>
                     <span className='tituloCard'>Prof. Jô</span>
-                    <Botao />
+                    <Botao 
+                        className={''}
+                        href={'https://www.instagram.com/p/DDnOi7-pQMM/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=='}
+                        target={'_blank'}
+                        texto={'Saiba mais'}
+                    />
                 </span>
 
             </span>
